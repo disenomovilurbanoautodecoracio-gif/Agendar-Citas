@@ -1,0 +1,22 @@
+name: Submit a Citation
+description: Use this form to share a relevant quote or citation.
+title: "[Citas]: "
+labels: ["citation request", "needs review"]
+body:
+  - type: textarea
+    id: quote
+    attributes:
+      label: The Quote
+      description: Please provide the exact text of the quote.
+      placeholder: "Enter the quote here..."
+      render: markdown
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Where did this quote come from (author, publication, link)?
+      placeholder: "e.g., Jane Doe, 2024, [link to source]"
+    validations:
+      required: true
